@@ -1,16 +1,38 @@
 name: Test
 
 on: [push]
-  
+
 jobs:
-  test-build:
+  hola:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4.2.0
+    - name: Hola Mundo
+      run: echo "Hola Mundo"
+    
+    - name: touch file
+      run: touch file.txt
+    
+    - name: Set text
+      run: echo "Hello World" > file.txt
+
+    - name: Read file
+      run: cat file.txt
   
-      - name: ls
-        run: | #pipe para generar comandos multilinea
-          chmod +x script.sh
-          ./script.sh
+  other:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4.2.0
+    - name: LS
+      run: ls -al
+
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v4.0.4
+
+    - name: node version
+      run: node --version
+  
+
+      
+  
