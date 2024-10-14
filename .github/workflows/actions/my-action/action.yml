@@ -2,9 +2,9 @@ name: "My action"
 description: "My first action"
 
 runs:
-    using: "composite"
-
-    steps:
+  using: "composite"
+  
+  steps:
     - name: Hola Mundo
-    run: echo "Hola Mundo"
-    shell: bash
+      run: echo "Hola Mundo"
+      shell: bash
