@@ -11,7 +11,8 @@ jobs:
 
       - name: ls
         uses: ./.github/workflows/actions/my-action
-      
+        with:
+          message: "Jean"
 
 
   
