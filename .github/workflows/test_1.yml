@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Test
-        run: echo "Probando ${{ vars.JOB_NAME }}""
+        run: echo "Probando ${{ vars.MY_VARIABLE }}""
 
   
 
