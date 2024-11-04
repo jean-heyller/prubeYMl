@@ -10,7 +10,7 @@ jobs:
 
     steps:
       - name: Test
-        run: echo "Probando ${{ vars.MY_VARIABLE }}""
+        run: echo "Probando ${{ vars.MY_VARIABLE }}"
 
   
 
